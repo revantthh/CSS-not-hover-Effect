@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+    background-color: #1e272e;
+}
+
+.container{
+    padding-top: 200px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 50vh;
+    color: white;
+}
+
+img{
+    width: 200px;
+    border-radius: 10px;
+    -webkit-box-reflect: below 2.5px
+    linear-gradient(transparent, transparent, rgba(3,3,3,0.2));
+    border: 3px ridge #a5b1c2;
+    margin: 20px;
+    height: 40vh;
+}
+
+.card{
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: #1e272e;
+}
+
+.container:hover > :not(:hover){
+    opacity: 0.3;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    color: rgb(255, 0, 0);
+}
+
+.titles{
+    text-align: center;
+}
+
+.para{
+    text-align: center;
+    margin: 20px;
+    width: 200px;
+}
